@@ -255,12 +255,14 @@ section {
   background: #f2f2f2;
 }
 
+.services__service-list {
+  margin-top: 16px;
+}
+
 .service-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  margin-top: 16px;
 
   list-style: none;
 }
@@ -317,7 +319,7 @@ section {
   border: 1px solid white;
 }
 
-.portfolio__image {
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -325,11 +327,11 @@ section {
   list-style: none;
 }
 
-.portfolio__item {
+.portfolio-list__item {
   display: none;
 }
 
-.portfolio__item:nth-child(-n + 12) {
+.portfolio-list__item:nth-child(-n + 12) {
   display: block;
 
   width: 220px;
@@ -339,7 +341,7 @@ section {
   background: #494e62;
 }
 
-.about-people {
+.about__people {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -427,7 +429,7 @@ object {
   color: #f0d8d9;
 }
 
-.contact {
+.quote__contact {
   display: flex;
 
   margin: 44px 0 8px;
@@ -545,7 +547,7 @@ textarea::placeholder {
   background-size: 13px;
 }
 
-footer {
+.footer {
   display: flex;
   align-items: center;
 
@@ -555,7 +557,7 @@ footer {
   background: #2d303a;
 }
 
-.footer {
+.footer__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
