@@ -17,6 +17,8 @@ h2 {
 
   margin: 0;
 
+  letter-spacing: 0.2px;
+
   color: #666d89;
 }
 
@@ -26,6 +28,8 @@ h2 + p {
   line-height: 30px;
 
   margin: 9px 0 11px;
+
+  letter-spacing: -0.2px;
 }
 
 h3 {
@@ -35,14 +39,20 @@ h3 {
 
   margin: 0;
   margin-bottom: 10px;
+
+  letter-spacing: 0.1px;
 }
 
 h3 + p {
   margin: 3px 0;
+
+  letter-spacing: -0.2px;
 }
 
 a {
   text-decoration: none;
+
+  color: white;
 }
 
 ul {
@@ -72,11 +82,11 @@ ul {
   border: 0;
 }
 
-header {
+.header {
   display: flex;
   align-items: center;
 
-  height: 89px;
+  min-height: 89px;
 
   text-transform: uppercase;
 
@@ -84,7 +94,7 @@ header {
   background: #2d303a;
 }
 
-.header {
+.header__content {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -94,10 +104,14 @@ header {
   font-size: 25px;
   font-weight: 400;
 
-  color: white;
+  letter-spacing: -0.4px;
 }
 
 .logo__link span {
+  color: #f06c64;
+}
+
+.logo__link:hover {
   color: #f06c64;
 }
 
@@ -110,13 +124,17 @@ header {
 .navigation__item {
   position: relative;
 
-  padding-left: 29px;
+  margin-left: 29px;
+}
+
+.navigation__item:first-child {
+  margin-left: 0;
 }
 
 .navigation__item::before {
   position: absolute;
   top: 0;
-  left: 13px;
+  left: -16px;
 
   content: "·";
 
@@ -127,14 +145,8 @@ header {
   content: "";
 }
 
-.navigation__item a {
-  font-weight: 400;
-
-  color: white;
-}
-
-.navigation__item_active a,
-.navigation__item a:hover {
+.navigation__link_active,
+.navigation__link:hover {
   color: #f06c64;
 }
 
@@ -434,7 +446,7 @@ textarea {
   box-sizing: border-box;
   width: 620px;
   max-width: 620px;
-  padding: 12px 14px 11px;
+  padding: 12px 14px 13px;
 
   color: white;
   border: none;
