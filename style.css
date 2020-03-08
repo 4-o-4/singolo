@@ -525,8 +525,6 @@ textarea::placeholder {
   position: absolute;
   left: 0;
 
-  display: block;
-
   width: 13px;
   height: 18px;
 
