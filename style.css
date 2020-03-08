@@ -363,8 +363,14 @@ section {
   background: #494e62;
 }
 
-.people__name {
+.people__name h3 {
   overflow: hidden;
+
+  height: 28px;
+  margin-bottom: 0;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .people__name + p {
